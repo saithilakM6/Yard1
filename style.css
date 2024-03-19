@@ -1,0 +1,111 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ /* Global Styles */
+ :root {
+  --primary-color: #162938;
+  --secondary-color: #eef;
+  --accent-color: #ff6347;
+  --font-family: 'Calibre', sans-serif;
+ }
+ 
+ body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: #f5f5f5; /* Light background for better contrast */
+ }
+ 
+ /* Header Image Styling */
+ #rinl {
+  display: block;
+  width: 540px;
+  height: auto;
+  margin: 20px auto; /* Center the image */
+ }
+ 
+ .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Add padding for better spacing */
+ }
+ 
+ .logo {
+  text-align: center;
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 10px; /* Reduced space for better aesthetics */
+ }
+ 
+ .enter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* White background for form */
+  padding: 15px; /* Reduced padding for compactness */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px; /* Limit width for better readability */
+ }
+ 
+ label {
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+ }
+ 
+ input[type="login-id"],
+ input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+ }
+ 
+ .trap {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .trap:hover {
+  background-color: #ff8a65; /* Darker shade on hover */
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+  .main {
+     padding: 10px;
+  }
+ 
+  .enter {
+     width: 90%;
+     padding: 10px; /* Reduced padding for better responsiveness */
+  }
+ 
+  .logo {
+     font-size: 1.5em; /* Adjusted for better readability on smaller screens */
+  }
+ }
+ 
+ @media (max-width: 480px) {
+  .logo {
+     font-size: 1.2em; /* Further reduced for smaller screens */
+  }
+ 
+  .enter {
+     padding: 10px; /* Reduced padding for compactness */
+  }
+ }
+ 
